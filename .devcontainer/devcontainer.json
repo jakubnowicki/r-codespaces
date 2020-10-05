@@ -12,8 +12,14 @@
 
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
+		// R extensions
 		"ikuyadeu.r",
-		"REditorSupport.r-lsp"
+		"REditorSupport.r-lsp",
+		// Utility extensions, feel free to adjust them
+		"coenraads.bracket-pair-colorizer-2",
+		"streetsidesoftware.code-spell-checker",
+		"eamodio.gitlens",
+		"sdras.night-owl"
 	]
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
