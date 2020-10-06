@@ -3,7 +3,7 @@
 This repository contains a basic configuration that allows working with R in GitHub.
 It includes [`R`](https://marketplace.visualstudio.com/items?itemName=Ikuyadeu.r) and
 [`R LSP Client`](https://marketplace.visualstudio.com/items?itemName=REditorSupport.r-lsp) VSCode extensions.
-This configuration comes with `renv` setup that contains `languageserver` package required to enable the latter one.
+It comes with `renv` setup which includes `languageserver` package required to enable the latter extension.
 To install it, open R in Codespaces console and type `renv::restore()`.
 
 ## Adjusting configuration to your needs
