@@ -1,6 +1,6 @@
 # GitHub Codespaces configuration for R
 
-This repository contains a basic configuration that allows working with R in GitHub.
+This repository contains a basic configuration that allows working with R in [GitHub Codespaces](https://github.com/features/codespaces).
 It includes [`R`](https://marketplace.visualstudio.com/items?itemName=Ikuyadeu.r) and
 [`R LSP Client`](https://marketplace.visualstudio.com/items?itemName=REditorSupport.r-lsp) VSCode extensions.
 It comes with `renv` setup which includes `languageserver` package required to enable the latter extension.
