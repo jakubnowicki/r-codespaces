@@ -21,3 +21,5 @@ RUN apt-get update \
     && apt-get -y install --no-install-recommends libcurl4-openssl-dev libssl-dev libxml2-dev
 
 RUN Rscript -e "install.packages('renv')"
+
+RUN python3 -m pip install radian
