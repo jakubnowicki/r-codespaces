@@ -22,4 +22,5 @@ RUN apt-get update \
 
 RUN Rscript -e "install.packages('renv')"
 
+RUN python3 -m pip install setuptools
 RUN python3 -m pip install radian
