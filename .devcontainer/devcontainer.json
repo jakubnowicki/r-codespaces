@@ -9,6 +9,7 @@
 	"settings": {
 		"terminal.integrated.shell.linux": "/bin/bash",
 		"r.rterm.linux": "/usr/local/bin/radian",
+		"r.bracketedPaste": true,
 		"workbench.colorTheme": "Night Owl"
 	},
 
