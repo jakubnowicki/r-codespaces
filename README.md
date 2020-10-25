@@ -25,3 +25,23 @@ This configuration comes with initalized workspace but you can easily create you
 
 Besides extensions for R, this configuration includes a few additional ones that can be helpful in development.
 You can add additional extensions in `.devcontainer/devcontainer.json` file in "extensions" section.
+
+### Running Shiny applications
+
+R extension allows running Shiny applications from Codespaces. To do that,
+follow these steps (you can use sample Shiny [Old Faithful app](./docs/examples/app.R)):
+
+1. Install `shiny` and all R dependencies required by your app by opening R in Codespace console.
+1. You will need an entry file.
+     * In single file apps it is just the same
+file as the app (`shinyApp(ui = ui, server = server)` at the end of the file).
+    * In multiple files app you need an additional file with
+    `shiny::runApp(appDir = "app_dir")` function that points to the app directory.
+1. Run this file with `R: Run soure with echo` command (shortcut: Ctrl/Cmd + Shift + Enter)
+1. App will be available at a specific port. You can set it as function argument
+(eg. `shiny::runApp(appDir = "app+dir", port = 8888)`) or leave it so it
+will be chosen randomly. Now you need to forward that port so you can access
+the app in your browser. VSCode Remote extension is super handy here. It
+will list all available ports and you can forward them just by a single click.
+![](./docs/img/forward_port.png)
+1. Enjoy playing with your app!
