@@ -21,6 +21,8 @@ Remember that current Dockerfile is suited for images based on Ubuntu.
 I strongly recommend using [`renv`](https://rstudio.github.io/renv/index.html) when it comes to setting your working environment in R.
 This configuration comes with initalized workspace but you can easily create your own one. Just remember that `languageserver` is required for `R LSP Client` extension to work (it needs to be installed, adding to `renv.lock` file is optional).
 
+`renv` configuration set here as default comes with (already mentioned) `languageserver`, `lintr` and `styler` packages. To enable detection by `renv`, all three are included in `develop_packages.R` file. This way you can run `renv::snapshot()` without setting any additional option like `type = "all"` and include them in your R environment setup.
+
 ### Adding VSCode extensions
 
 Besides extensions for R, this configuration includes a few additional ones that can be helpful in development.
