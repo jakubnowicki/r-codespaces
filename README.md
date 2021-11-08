@@ -11,7 +11,7 @@ To install it, open R in Codespaces console and type `renv::restore()`.
 
 ### Different R version
 
-This configuration is based on `rocker/r-ver:4.0.0-ubuntu18.04` Docker image with installed dependencies required by `languageserver` package.
+This configuration is based on `rocker/r-ver:4.1.2` Docker image with installed dependencies required by `languageserver` package.
 You can change that and replace the current image with the one of your choice in `.devcontainer/Dockerfile`.
 Check [rocker repositories](https://hub.docker.com/u/rocker) for available options.
 
