@@ -1,4 +1,4 @@
-FROM rocker/r-ver:4.0.0-ubuntu18.04
+FROM rocker/r-ver:4.1.2
 
 # [Option] Install zsh
 ARG INSTALL_ZSH="true"
